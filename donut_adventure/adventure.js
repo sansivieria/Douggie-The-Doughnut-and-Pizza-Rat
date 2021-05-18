@@ -1,4 +1,4 @@
-// hero
+// hero 10:22
 
 class Hero {
   constructor(name) {
@@ -26,3 +26,26 @@ class Hero {
 let doug = new Hero("Dougie the Donut");
 
 // enemy
+
+class Enemy {
+  constructor(name) {
+    this.name = name;
+    this.health = 100;
+    this.weapons = {
+      pepperoniStars: 5,
+      cheeseGrease: 10
+    };
+    this.catchPhrases = ['i\'m youtube famous',
+        'i\'m more dangerous than an uncovered sewer']
+  }
+  talkSmack() {
+    let quote = this.catchPhrases[Math.floor(Math.random()*2)];
+    console.log(quote);
+  }
+  announceHealth() {
+    console.log(this.name + " HP: " + this.health);
+  }
+  fight() {
+    console.log("i\'m gonna flatten you like a slice of pepperoni!");
+  }
+}
