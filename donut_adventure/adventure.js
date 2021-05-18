@@ -22,3 +22,5 @@ class Hero {
 }
 
 let doug = new Hero("Dougie the Donut");
+
+//hero
