@@ -1,3 +1,5 @@
+// hero
+
 class Hero {
   constructor(name) {
     this.name = name;
@@ -23,4 +25,4 @@ class Hero {
 
 let doug = new Hero("Dougie the Donut");
 
-//hero
+// enemy
