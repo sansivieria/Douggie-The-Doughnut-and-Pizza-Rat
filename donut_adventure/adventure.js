@@ -67,3 +67,11 @@ doug.talkSass();
 rat.talkSmack();
 doug.announceHealth();
 rat.announceHealth();
+
+// fight begins
+
+console.log("Dougie and Pizza rat start fighting!");
+doug.fightAgain(rat);
+rat.announceHealth();
+rat.fightAgain(doug);
+doug.announceHealth();
