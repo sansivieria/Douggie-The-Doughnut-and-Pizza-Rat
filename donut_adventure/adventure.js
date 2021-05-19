@@ -21,6 +21,10 @@ class Hero {
   fight() {
     console.log("i\'m ready to rumble");
   }
+  fightAgain() {
+    console.log(this.name + "used Sugar Shock for 10HP");
+    console.log(target.name + " was hit! his HP is now " + target.health--10);
+  }
 }
 
 let doug = new Hero("Dougie the Donut");
@@ -50,8 +54,16 @@ class Enemy {
   }
   fightAgain() {
     console.log(this.name + "used Cheese Grease for 10HP")
-    console.log(target.health --10);
+    console.log(target.name + " was hit! his HP is now " + target.health--10);
   }
 }
 
 let rat = new Enemy("Pizza Rat")
+
+// walking down the street
+
+console.log("Dougie is walking down Flat Iron -- but oh no! He runs into Pizza rat!")
+doug.talkSass();
+rat.talkSmack();
+doug.announceHealth();
+rat.announceHealth();
